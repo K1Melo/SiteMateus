@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 
@@ -18,6 +17,9 @@
             font-family: 'Rubik', sans-serif;
             width: 100%;
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .container {
@@ -28,23 +30,53 @@
             justify-content: center;
         }
 
-        .from-to {
-            width: fit-content;
-            padding: .5% 2%;
-
-            background-color: rgb(159, 164, 198);
-            position: absolute;
-            left: 0%;
-            bottom: 5%;
-
-        }
-
         .teamo {
             padding-top: 10%;
-            height: 30vh;
-            width: 100%;
+            height: 50vh;
+            width: 80%;
             display: flex;
-            justify-content: center;        
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .title {
+            margin-bottom: 5%;
+            font-size: 40px;
+        }
+
+        .text {
+            font-size: 20px;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .teamo {
+                padding-top: 15%;
+                height: 70vh;
+            }
+
+            .title {
+                margin-bottom: 10%;
+                font-size: 30px;
+            }
+
+            .text {
+                font-size: 15px;
+            }
+        }
+        @media only screen and (max-width: 300px) {
+            .teamo {
+                padding-top: 15%;
+                height: 70vh;
+            }
+
+            .title {
+                margin-bottom: 10%;
+                font-size: 25px;
+            }
+
+            .text {
+                font-size: 13px;
+            }
         }
     </style>
 
@@ -52,15 +84,24 @@
 
 <body>
     <div class="container">
-        <iframe src='https://my.spline.design/luv-b2cef6fa3319c819319f1fb5e2e30d30/' frameborder='0' width='100%' height='100%'></iframe>
-        <div class="from-to">
-            <p class="from">De: Mateus Lima</p>
-            <p class="to">Para: ...</p>
-        </div>
+        <iframe src='https://my.spline.design/luv-b2cef6fa3319c819319f1fb5e2e30d30/' frameborder='0' width='100%'
+            height='100%'></iframe>
     </div>
     <div class="teamo">
-
         <h1 class="title">Eu te amo</h1>
+        <p class="text">Então meu amor, eu decidi criar esse site para que você pudesse ver na forma do meu mundo o
+            quanto eu te amo e o quanto é importante para mim.
+
+            Quero dizer que te amo muito e você me faz ser o homem mais feliz do mundo e só de pensar que me atura a uns
+            aninhos e é oficialmente minha namorada a 7 meses me faz pensar que esses são os melhores momentos da minha
+            vida.
+
+            Você me faz sentir a mais pura felicidade e sempre que estou com você tudo muda e fica melhor, meu dia
+            melhora, meu humor melhora e tudo isso por você estar junto a mim. Isso foi feito em menos de 24 horas e é o
+            básico e quero lhe dizer que direi o resto das minhas palavras em nosso privado.
+
+            Feliz 7 meses para gente meu amor e espero atenciosamente para o 8, 9 e 1 ano com você te amo muito, e
+            sempre vou te amar.</p>
     </div>
 </body>
 
